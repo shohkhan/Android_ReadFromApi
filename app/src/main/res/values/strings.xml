@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">I Love Zappos</string>
+    <string name="action_share">Share</string>
+    <string name="added_to_cart">The item has been added to the cart.</string>
+    <string name="search">Search</string>
+    <string name="error_message">Failed to get results. Please try again.</string>
+    <string name="key_value">b743e26728e16b81da139182bb2094357c31d331</string>
+    <string name="key">key</string>
+    <string name="base_url">https://api.zappos.com/Search</string>
+    <string name="param_query">term</string>
+    <string name="query_hint">Search here</string>
+</resources>

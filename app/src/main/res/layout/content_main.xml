@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.android.ilovezappos.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/sv_search_box"
+        android:textSize="22sp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alwaysDrawnWithCache="false" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_brand_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="#1a53ff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/iv_first_item"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal" />
+
+
+            <TextView
+                android:id="@+id/tv_label_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Price"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_original_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="#ff4d4d"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+
+
+            <TextView
+                android:id="@+id/tv_error_message_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/error_message"
+                android:textSize="22sp"
+                android:visibility="invisible" />
+
+            <ProgressBar
+                android:id="@+id/pb_loading_indicator"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
